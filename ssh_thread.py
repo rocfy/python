@@ -13,7 +13,7 @@ def usage():
 
               -h,-H,--help         帮助页面 
               -C, --cmd            执行命令模式 
-              -M, --command        执行命令模式 
+              -M, --command        执行具体命令 
               -S, --sendfile       传输文件模式 
               -L, --localpath      本地文件路径 
               -R, --remotepath     远程服务器路径 
