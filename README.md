@@ -24,3 +24,6 @@
               批量传送文件：     -S "IP列表" -L "本地文件路径" -R "远程文件路径"
 	      错误日志文件：$PWD/ssh_errors.log
 
+2. check_ping.py  多进程检测ping，并取值
+	
+	默认开启4个进程，需要将hosts.txt IP列表文件放入同一目录下，IP列表每行一个，支持域名、IP
