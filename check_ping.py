@@ -18,8 +18,7 @@ def  pinger(ip):
 	rtt_max=rtt[2]
 	print "%s\t\t%s\t\t%s\t\t%s\t\t%s"%(ip,packet_loss,rtt_min,rtt_max,rtt_avg)
 
-def test(ip):
-    print ip
+
 
 if __name__ == "__main__":
     now=datetime.datetime.now()
