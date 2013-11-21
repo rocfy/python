@@ -1,7 +1,8 @@
 #!/usr/bin/python 
+#coding:utf-8
 import multiprocessing
 import re 
-import sys
+import sys,os
 import commands
 import datetime
 def  pinger(ip):
@@ -21,6 +22,9 @@ def  pinger(ip):
 
 
 if __name__ == "__main__":
+    if not os.path.exists("hosts.txt") :
+	print "\033[31mhosts.txt文件不存在，请重试\033[0m"
+	sys.exit(1)
     now=datetime.datetime.now()
     file=open('hosts.txt','r')
     pool=multiprocessing.Pool(processes=4)
