@@ -30,3 +30,6 @@
 3. check_ip138.py 通过ip138检测IP（域名）归属地
 
 	使用方法: python check_ip138.py  192.168.1.1
+4.vps_baidu.py  使用baidupan备份VPS
+	pip install baidupan
+	http://solos.github.io/baidupan/
