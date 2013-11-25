@@ -27,11 +27,16 @@
 2. check_ping.py  多进程检测ping，并取值
 	
 	默认开启4个进程，需要将hosts.txt IP列表文件放入同一目录下，IP列表每行一个，支持域名、IP
+
+
 3. check_ip138.py 通过ip138检测IP（域名）归属地
 
 	使用方法: python check_ip138.py  192.168.1.1
 	
-4.vps_baidu.py  使用baidupan备份VPS
+	
+	
+	
+4. vps_baidu.py  使用baidupan备份VPS
 
 	pip install baidupan
 	
