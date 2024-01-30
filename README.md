@@ -1,35 +1,41 @@
 ==========
-	
-##本项目为日常工作中的使用的python脚本
 
+##This project is a python script used in daily work
 
-###1.  ssh_thread.py  是一个批量执行命令的脚本，支持直接执行ssh命令及文件传输，支持多线程
+###1. ssh_thread.py is a script for batch execution of commands. It supports direct execution of ssh commands and file transfer, and supports multi-threading.
 
-		使用说明如下：
-	
-		-h,-H,--help         帮助页面 
-        -C, --cmd            执行命令模式 
-        -M, --command        执行命令模式 
-        -S, --sendfile       传输文件模式 
-        -L, --localpath      本地文件路径 
-        -R, --remotepath     远程服务器路径 
+Instructions for use are as follows:
 
-	    IP列表格式:
+-h,-H,--help help page
+    -C, --cmd execution command mode
+    -M, --command execute command mode
+    -S, --sendfile transfer file mode
+    -L, --localpath local file path
+    -R, --remotepath remote server path
 
-   	    IP地址		用户名     密码     端口
-	    192.168.1.1        root	  123456    22
+    IP list format:
 
-      	e.g.
-              批量执行命令格式： -C "IP列表" -M '执行的命令'
-              批量传送文件：     -S "IP列表" -L "本地文件路径" -R "远程文件路径"
-	    错误日志文件：$PWD/ssh_errors.log
+    IP address Username Password Port
+    192.168.1.1 root 123456 22
 
-###2. check_ping.py  多进程检测ping，并取值
-	
-		默认开启4个进程，需要将hosts.txt IP列表文件放入同一目录下，IP列表每行一个，支持域名、IP
+  e.g.
+          Batch execution command format: -C "IP list" -M 'Executed command'
+          Batch transfer files: -S "IP list" -L "local file path" -R "remote file path"
+    Error log file: $PWD/ssh_errors.log
 
+###2. check_ping.py detects ping in multiple processes and gets the value
 
-###3. check_ip138.py 通过ip138检测IP（域名）归属地
+By default, 4 processes are enabled. You need to put the hosts.txt IP list file into the same directory. The IP list is one per line. Domain names and IPs are supported.
+
+###3. check_ip138.py Detects the IP (domain name) location through ip138
+
+Usage: python check_ip138.py 192.168.1.1
+
+###4. vps_baidu.py Use baidupan to back up VPS
+
+pip install baidupan
+
+Reference: http://solos.github.io/baidupan/
 
 		使用方法: python check_ip138.py  192.168.1.1
 	
